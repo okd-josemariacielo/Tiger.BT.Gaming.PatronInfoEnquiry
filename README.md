@@ -3,6 +3,8 @@ Interface to get the patron information from Engage system (CRM)
 ----------------------------------------------------
 ----------------------------------------------------
 Dependencies:
+1. Tiger.BT.Gaming.Deserialization
+2. Tiger.BT.Gaming.HAloS2S
 ----------------------------------------------------
 ----------------------------------------------------
 CHANGES
