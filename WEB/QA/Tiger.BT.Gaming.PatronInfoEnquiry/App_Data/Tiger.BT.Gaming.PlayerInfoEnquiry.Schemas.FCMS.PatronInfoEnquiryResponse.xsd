@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<xs:schema xmlns="http://TRLEI.Integration.BizTalk.PatronInfoEnquiryResponse" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" targetNamespace="http://TRLEI.Integration.BizTalk.PatronInfoEnquiryResponse" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="PatronInfoEnquiryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="playerInfoList">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element form="qualified" name="playerId" type="xs:string" />
+              <xs:element minOccurs="0" name="playerProfile">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element form="qualified" name="title" type="xs:string" />
+                    <xs:element form="qualified" name="suffix" type="xs:string" />
+                    <xs:element form="qualified" name="registeredProperty" type="xs:string" />
+                    <xs:element form="qualified" name="registeredDateTime" type="xs:dateTime" />
+                    <xs:element form="qualified" name="preferredName" type="xs:string" />
+                    <xs:element form="qualified" name="playerWeight" type="xs:long" />
+                    <xs:element form="qualified" name="playerVIP" type="xs:boolean" />
+                    <xs:element form="qualified" name="playerProperty" type="xs:string" />
+                    <xs:element form="qualified" name="playerHeight" type="xs:long" />
+                    <xs:element form="qualified" name="playerActive" type="xs:boolean" />
+                    <xs:element form="qualified" name="pinNumber" type="xs:string" />
+                    <xs:element form="qualified" name="pinActive" type="xs:boolean" />
+                    <xs:element form="qualified" name="lastName1" type="xs:string" />
+                    <xs:element form="qualified" name="middleName" type="xs:string" />
+                    <xs:element form="qualified" name="hairColor" type="xs:string" />
+                    <xs:element form="qualified" name="genderType" type="xs:string" />
+                    <xs:element form="qualified" name="fullName" type="xs:string" />
+                    <xs:element form="qualified" name="firstName" type="xs:string" />
+                    <xs:element form="qualified" name="eyeColor" type="xs:string" />
+                    <xs:element form="qualified" name="ctrComplete" type="xs:boolean" />
+                    <xs:element form="qualified" name="birthDate" type="xs:date" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="playerAddress">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element form="qualified" name="stateProvCode" type="xs:string" />
+                    <xs:element form="qualified" name="returnedMail" type="xs:boolean" />
+                    <xs:element form="qualified" name="primaryAddress" type="xs:boolean" />
+                    <xs:element form="qualified" name="postCode" type="xs:string" />
+                    <xs:element form="qualified" name="mailtoAddress" type="xs:boolean" />
+                    <xs:element form="qualified" name="excludeAddress" type="xs:boolean" />
+                    <xs:element form="qualified" name="countryCode" type="xs:string" />
+                    <xs:element form="qualified" name="addressType" type="xs:string" />
+                    <xs:element form="qualified" name="addressLine3" type="xs:string" />
+                    <xs:element form="qualified" name="addressLine2" type="xs:string" />
+                    <xs:element form="qualified" name="addressLine1" type="xs:string" />
+                    <xs:element form="qualified" name="addressId" type="xs:string" />
+                    <xs:element form="qualified" name="addressCity" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="playerPhone">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element form="qualified" name="primaryPhone" type="xs:boolean" />
+                    <xs:element form="qualified" name="phoneType" type="xs:string" />
+                    <xs:element form="qualified" name="phoneNumber" type="xs:string" />
+                    <xs:element form="qualified" name="phoneId" type="xs:string" />
+                    <xs:element form="qualified" name="phoneCountry" type="xs:string" />
+                    <xs:element form="qualified" name="phoneAreaCode" type="xs:string" />
+                    <xs:element form="qualified" name="excludePhone" type="xs:boolean" />
+                    <xs:element form="qualified" name="calltoPhone" type="xs:boolean" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="playerEmail">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element form="qualified" name="excludeEmail" type="xs:boolean" />
+                    <xs:element form="qualified" name="emailId" type="xs:string" />
+                    <xs:element form="qualified" name="emailAddress" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="playerIdent">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element form="qualified" name="verifiedDateTime" type="xs:dateTime" />
+                    <xs:element form="qualified" name="stateProvCode" type="xs:string" />
+                    <xs:element form="qualified" name="identType" type="xs:string" />
+                    <xs:element form="qualified" name="identNumber" type="xs:string" />
+                    <xs:element form="qualified" name="identId" type="xs:string" />
+                    <xs:element form="qualified" name="identExpiry" type="xs:dateTime" />
+                    <xs:element form="qualified" name="identVerified" type="xs:boolean" />
+                    <xs:element form="qualified" name="identActive" type="xs:boolean" />
+                    <xs:element form="qualified" name="countryCode" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="playerStop">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element form="qualified" name="stopType" type="xs:string" />
+                    <xs:element form="qualified" name="stopEffectiveDate" type="xs:date" />
+                    <xs:element form="qualified" name="stopActive" type="xs:boolean" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" name="playerClub">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element form="qualified" name="playerClubExpDate" type="xs:date" />
+                    <xs:element form="qualified" name="playerClubEffDate" type="xs:date" />
+                    <xs:element form="qualified" name="playerClubActive" type="xs:boolean" />
+                    <xs:element form="qualified" name="clubNotify" type="xs:boolean" />
+                    <xs:element form="qualified" name="clubName" type="xs:string" />
+                    <xs:element form="qualified" name="clubId" type="xs:string" />
+                    <xs:element form="qualified" name="cardSuffix" type="xs:int" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

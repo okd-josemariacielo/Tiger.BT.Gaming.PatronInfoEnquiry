@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<xs:schema xmlns="http://TRLEI.Integration.BizTalk.PatronInfoEnquiryRequest" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" targetNamespace="http://TRLEI.Integration.BizTalk.PatronInfoEnquiryRequest" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="PatronInfoEnquiryRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ToSystem" type="xs:string" />
+        <xs:element name="MessageID" type="xs:string" />
+        <xs:element name="FromSystem" type="xs:string" />
+        <xs:element name="PatronID" type="xs:string" />
+        <xs:element name="IncludeStopCodes" type="xs:boolean" />
+        <xs:element name="IncludeProfile" type="xs:boolean" />
+        <xs:element name="IncludePhone" type="xs:boolean" />
+        <xs:element name="IncludeIndentification" type="xs:boolean" />
+        <xs:element name="IncludeEmail" type="xs:boolean" />
+        <xs:element name="IncludeClub" type="xs:boolean" />
+        <xs:element name="IncludeAddress" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
