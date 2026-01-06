@@ -1,0 +1,4 @@
+C:\Users\Biztalkqa.admin\Documents\Visual Studio 2013\Projects\Tiger.BT.Gaming\Tiger.BT.Gaming.PlayerEnquiry\bin\Release\Tiger.BT.Gaming.PlayerInfoEnquiry.dll
+C:\Users\Biztalkqa.admin\Documents\Visual Studio 2013\Projects\Tiger.BT.Gaming\Tiger.BT.Gaming.PlayerEnquiry\bin\Release\Tiger.BT.Gaming.PlayerInfoEnquiry.pdb
+C:\Users\Biztalkqa.admin\Documents\Visual Studio 2013\Projects\Tiger.BT.Gaming\Tiger.BT.Gaming.PlayerEnquiry\obj\Release\Tiger.BT.Gaming.PlayerInfoEnquiry.dll
+C:\Users\Biztalkqa.admin\Documents\Visual Studio 2013\Projects\Tiger.BT.Gaming\Tiger.BT.Gaming.PlayerEnquiry\obj\Release\Tiger.BT.Gaming.PlayerInfoEnquiry.pdb

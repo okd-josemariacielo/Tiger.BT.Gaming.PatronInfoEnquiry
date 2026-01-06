@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{221A5490-4DE9-49D0-B047-13CF02A30003}</ProjectGuid>
+    <ProjectTypeGuids>{EF7E3281-CD33-11D4-8326-00C04FA0CE8D};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>library</OutputType>
+    <GenericProcessing>true</GenericProcessing>
+    <RootNamespace>Tiger.BT.Gaming.PatronInfoEnquiry</RootNamespace>
+    <AssemblyName>Tiger.BT.Gaming.PatronInfoEnquiry</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <BpelCompliance>True</BpelCompliance>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Tiger.BT.Gaming.PatronInfoEnquiry.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Name>System.Configuration</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.Pipeline">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.DefaultPipelines">
+      <Name>Microsoft.BizTalk.DefaultPipelines</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.GlobalPropertySchemas">
+      <Name>Microsoft.BizTalk.GlobalPropertySchemas</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.TestTools">
+      <Name>Microsoft.BizTalk.TestTools</Name>
+    </Reference>
+    <Reference Include="Microsoft.XLANGs.BaseTypes">
+      <Name>Microsoft.XLANGs.BaseTypes</Name>
+    </Reference>
+    <Reference Include="Tiger.BT.Gaming.Deserialization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=92a09ea6c24ad638, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\Tiger.BT.Gaming.Deserialization\v4.0_1.0.0.0__92a09ea6c24ad638\Tiger.BT.Gaming.Deserialization.dll</HintPath>
+    </Reference>
+    <Reference Include="Tiger.BT.Gaming.HAloS2S, Version=1.0.0.0, Culture=neutral, PublicKeyToken=7e37cbecb1abce70, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\Tiger.BT.Gaming.HAloS2S\v4.0_1.0.0.0__7e37cbecb1abce70\Tiger.BT.Gaming.HAloS2S.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="Schemas\HAlo\BallyGetPlayerInfoRequest.xsd">
+      <TypeName>BallyGetPlayerInfoRequest</TypeName>
+      <Namespace>Tiger.BT.Gaming.PlayerEnquiry.Schemas.HAlo</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="Schemas\HAlo\BallyGetPlayerInfoRequest1.xsd">
+      <TypeName>BallyGetPlayerInfoRequest1</TypeName>
+      <Namespace>Tiger.BT.Gaming.PlayerEnquiry.Schemas.HAlo</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="Schemas\HAlo\BallyGetPlayerInfoResponse.xsd">
+      <TypeName>BallyGetPlayerInfoResponse</TypeName>
+      <Namespace>Tiger.BT.Gaming.PlayerEnquiry.Schemas.HAlo</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="Schemas\HAlo\BallyGetPlayerInfoResponse1.xsd">
+      <TypeName>BallyGetPlayerInfoResponse1</TypeName>
+      <Namespace>Tiger.BT.Gaming.PlayerEnquiry.Schemas.HAlo</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Pipelines\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="Schemas\FCMS\PatronInfoEnquiryRequest.xsd">
+      <TypeName>PatronInfoEnquiryRequest</TypeName>
+      <Namespace>Tiger.BT.Gaming.PlayerInfoEnquiry.Schemas.FCMS</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="Schemas\FCMS\PatronInfoEnquiryResponse.xsd">
+      <TypeName>PatronInfoEnquiryResponse</TypeName>
+      <Namespace>Tiger.BT.Gaming.PlayerInfoEnquiry.Schemas.FCMS</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="Maps\PatronInfoEnquiryFCMSReqToHAloReq.btm">
+      <TypeName>PatronInfoEnquiryFCMSReqToHAloReq</TypeName>
+      <Namespace>Tiger.BT.Gaming.PlayerInfoEnquiry.Maps</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="Maps\PatronInfoEnquiryHAloReqToHAloSvcReq.btm">
+      <TypeName>PatronInfoEnquiryHAloReqToHAloSvcReq</TypeName>
+      <Namespace>Tiger.BT.Gaming.PlayerInfoEnquiry.Maps</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="Maps\PatronInfoEnquiryHAloResToFCMSRes.btm">
+      <TypeName>PatronInfoEnquiryHAloResToFCMSRes</TypeName>
+      <Namespace>Tiger.BT.Gaming.PlayerInfoEnquiry.Maps</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="Orchestrations\PatronInfoEnquiry.odx">
+      <TypeName>PatronInfoEnquiry</TypeName>
+      <Namespace>Tiger.BT.Gaming.PlayerInfoEnquiry.Orchestrations</Namespace>
+      <SubType>Task</SubType>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tiger.BT.Gaming.PatronInfoEnquiry.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />
+</Project>

@@ -1,0 +1,8 @@
+C:\Anand\GIT\Tiger.BT.Gaming\Tiger.BT.Gaming.PlayerEnquiry\bin\Debug\Tiger.BT.Gaming.PatronInfoEnquiry.dll
+C:\Anand\GIT\Tiger.BT.Gaming\Tiger.BT.Gaming.PlayerEnquiry\bin\Debug\Tiger.BT.Gaming.PatronInfoEnquiry.pdb
+C:\Anand\GIT\Tiger.BT.Gaming\Tiger.BT.Gaming.PlayerEnquiry\obj\Debug\Tiger.BT.Gaming.PatronInfoEnquiry.dll
+C:\Anand\GIT\Tiger.BT.Gaming\Tiger.BT.Gaming.PlayerEnquiry\obj\Debug\Tiger.BT.Gaming.PatronInfoEnquiry.pdb
+C:\Users\omk0029.cyk\Documents\SourceCode\Tiger.BT.Gaming.PatronInfoEnquiry\BTSolution\bin\Debug\Tiger.BT.Gaming.PatronInfoEnquiry.dll
+C:\Users\omk0029.cyk\Documents\SourceCode\Tiger.BT.Gaming.PatronInfoEnquiry\BTSolution\bin\Debug\Tiger.BT.Gaming.PatronInfoEnquiry.pdb
+C:\Users\omk0029.cyk\Documents\SourceCode\Tiger.BT.Gaming.PatronInfoEnquiry\BTSolution\obj\Debug\Tiger.BT.Gaming.PatronInfoEnquiry.dll
+C:\Users\omk0029.cyk\Documents\SourceCode\Tiger.BT.Gaming.PatronInfoEnquiry\BTSolution\obj\Debug\Tiger.BT.Gaming.PatronInfoEnquiry.pdb

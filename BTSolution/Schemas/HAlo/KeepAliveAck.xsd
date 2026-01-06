@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:s2s3="http://www.gamingstandards.com/s2s/schemas/v1.5.1/" xmlns:s2s="http://www.gamingstandards.com/s2s/schemas/v1.5.1/" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.gamingstandards.com/s2s/schemas/v1.5.1/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="s2sMessage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="s2sHeader">
+          <xs:complexType>
+            <xs:attribute ref="s2s:toSystem" use="required" />
+            <xs:attribute ref="s2s:fromSystem" use="required" />
+            <xs:attribute ref="s2s:messageId" use="required" />
+            <xs:attribute ref="s2s:referenceMessageId" use="required" />
+            <xs:attribute ref="s2s:dateTimeSent" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="s2sBody">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="communications">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="keepAliveAck">
+                      <xs:complexType>
+                        <xs:attribute ref="s2s:transDateTime" use="required" />
+                        <xs:attribute ref="s2s:interActive" use="required" />
+                        <xs:attribute ref="s2s:batchActive" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute ref="s2s:propertyId" use="required" />
+                  <xs:attribute ref="s2s:dateTime" use="required" />
+                  <xs:attribute ref="s2s:commandId" use="required" />
+                  <xs:attribute ref="s2s:sessionType" use="required" />
+                  <xs:attribute ref="s2s:sessionId" use="required" />
+                  <xs:attribute ref="s2s:timeToLive" use="required" />
+                  <xs:attribute ref="s2s:sessionRetry" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:attribute name="toSystem" type="xs:string" />
+  <xs:attribute name="fromSystem" type="xs:string" />
+  <xs:attribute name="messageId" type="xs:unsignedInt" />
+  <xs:attribute name="referenceMessageId" type="xs:unsignedInt" />
+  <xs:attribute name="dateTimeSent" type="xs:dateTime" />
+  <xs:attribute name="propertyId" type="xs:string" />
+  <xs:attribute name="dateTime" type="xs:dateTime" />
+  <xs:attribute name="commandId" type="xs:unsignedInt" />
+  <xs:attribute name="sessionType" type="xs:string" />
+  <xs:attribute name="sessionId" type="xs:string" />
+  <xs:attribute name="timeToLive" type="xs:unsignedShort" />
+  <xs:attribute name="sessionRetry" type="xs:string" />
+  <xs:attribute name="transDateTime" type="xs:dateTime" />
+  <xs:attribute name="interActive" type="xs:string" />
+  <xs:attribute name="batchActive" type="xs:string" />
+</xs:schema>
